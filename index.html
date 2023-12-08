@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+</head>
+    <header>
+        <nav id="main-nav">
+            <div id="menu-toggle">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul id="menu-items" class="hidden">
+                <li><a href="index.html"><img id="nav-logo" src="images/home.png" width="20px" height="20px"></a></li>
+                <li id="nav-player"><a href="player.html">Player Profiles</a></li>
+                <li id="nav-team"><a href="team.html">Team Pages</a></li>
+                <li id="nav-comparisons"><a href="comparisons.html">Player Comparisons</a></li>
+                <li id="nav-personal"><a href="personal.html">Personal Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+         <section id="personal-page">
+                <section id="personal-about">
+                    <h1>Personal Profile</h1>
+                    <p>Want to be able to track your progress and compare yourself to the pros? Do so right below with your very own create your own personal profile. Input your own stats in each category. In order to utilize this feature to the fullest, make sure to have analyzed your own match before inputting stats.</p>
+                </section>
+        </section>
+
+    <section class="flex-container">
+        <section id="main-content">
+            <a href="#" id="add-link">+ Add User Stats</a>
+            <section id="user-stats-list" class="flex-container"></section>
+            <section id="hide-details" class="hidden">
+                <section id="user-stat-details" class="flex-container">
+                    <h2>Details</h2>
+                    <div id="user-stat-details"></div>
+                </section>
+            </section>
+        </section>
+        <section id="add-user-stat" class="dialog transparent">
+            <span class="close">&times;</span>
+            <h3 id="add-edit"></h3>
+            <form id="user-stat-form" method="post">
+                <input type="hidden" id="_id" name="_id"> 
+                <p>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required />
+                </p>
+                <p>
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" required />
+                </p>
+                <p>
+                    <label for="height">Height (ft):</label>
+                    <input type="number" id="height" name="height" step="0.1" required />
+                </p>
+                <p>
+                    <label for="weight">Weight (lbs):</label>
+                    <input type="number" id="weight" name="weight" required />
+                </p>
+                <p>
+                    <label for="preferredPosition">Preferred Position:</label>
+                    <input type="text" id="preferredPosition" name="preferredPosition" required />
+                </p>
+                <p>
+                    <label for="passingAccuracy">Passing Accuracy:</label>
+                    <input type="number" id="passingAccuracy" name="passingAccuracy" step="0.01" required />
+                </p>
+                <p>
+                    <label for="dribbleSuccess">Success in Dribbles:</label>
+                    <input type="number" id="dribbleSuccess" name="dribbleSuccess" step="0.01" required />
+                </p>
+                <p>
+                    <label for="shotConversionRate">Shot Conversion Rate:</label>
+                    <input type="number" id="shotConversionRate" name="shotConversionRate" step="0.01" required />
+                </p>
+                <p>
+                    <label for="tackleSuccessRate">Tackle Success Rate:</label>
+                    <input type="number" id="tackleSuccessRate" name="tackleSuccessRate" step="0.01" required />
+                </p>
+                <p>
+                    <label for="minutesOnBall">Minutes on the Ball:</label>
+                    <input type="number" id="minutesOnBall" name="minutesOnBall" step="0.01" required />
+                </p>
+                <p>
+                    <button type="submit">Submit</button>
+                </p>
+            </form>
+        </section>
+    </section>
+</body>
+</html>

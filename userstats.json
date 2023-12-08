@@ -1,0 +1,14 @@
+{
+    "_id": "5f8251020a8d4c0678e8b750",
+    "name": "John Doe",
+    "age": 25,
+    "height": 6.2,
+    "weight": 180,
+    "preferredPosition": "Midfielder",
+    "passingAccuracy": 85,
+    "dribbleSuccess": 75,
+    "shotConversionRate": 20,
+    "tackleSuccessRate": 70,
+    "minutesOnBall": 15
+  }
+  
