@@ -8,12 +8,13 @@ body {
 h1 {
     margin: 0 auto;
     text-align: center;
-    border: 3px solid black;
     background: white;
     color: black;
     padding: 10px;
     border-radius: 5px;
     width: 500px;
+    font-size: xx-large;
+    text-align: center;
 }
 
 p {
